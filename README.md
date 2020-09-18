@@ -1,12 +1,12 @@
-What is Cloudini?
+# What is Cloudini?
 As your cloud capacity grows, you will be faced with a corresponding need to maintain and enforce policy across a larger array of resources. As your cloud usage gets larger and your organization's policy requirements increase, the scope of your policy enforcement processes needs to expand to ensure consistent policy adherence and fast violation detection. Larger deployments justify a larger enforcement scope and may need to take advantage of more sophisticated enforcement mechanisms involving deployment standards, company's compliance and the ability to ensure policy alignment.
 
-Cloudini is about a couple of things, grouped into two main ideas:
+## Cloudini is about a couple of things, grouped into two main ideas:
 • Compliance
 
 • Cost reduction & security improvement & organization
 
-Business goals
+## Business goals
 • Cloudini will save customer’s resources alignment and compliant.
 
 • Cloudini will simplify customer’s operations.
