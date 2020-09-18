@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+    {% block content%}
+    <div class="cloudini-card" >
+        <div class="card-block cloudini-center-text ">
+            <div class="auth-container">
+                <div class="card">
+                    <header class="auth-header">
+                        <h3 class="auth-title">
+                            New Organization
+                        </h3>
+                    </header>
+                    <div class="auth-content">
+                        <form method="POST">
+                            <div align="center">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                                <br>
+                            <button class="btn-lg btn-primary" >Register</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

@@ -1,0 +1,87 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+   <div class="cloudini-main-wrapper">
+ <div class="title-block">
+                        <h3 class="title"> Dashboard </h3>
+                        <p class="title-description">  </p>
+                    </div>
+            <article>
+
+                    <section class="section">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <div class="card-title-block">
+                                            <h3 class="title"> Total Violations </h3>
+                                        </div>
+                                        <div>
+                                       <canvas id="chart1" height="300" width="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <div class="card-title-block">
+                                            <h3 class="title"> Violations per Policy</h3>
+                                        </div>
+                                        <div>
+                                       <canvas id="chart2" height="300" width="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <div class="card-title-block">
+                                            <h3 class="title"> New Violations </h3>
+                                        </div>
+                                        <div>
+                                       <canvas id="chart3" height="300" width="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-block">
+                                        <div class="card-title-block">
+                                            <h3 class="title"> Violations per Resource </h3>
+                                        </div>
+                                        <div>
+                                         <canvas id="chart4" height="300" width="250"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </section>
+                </article>
+
+            </div>
+        </div>
+        <!-- Reference block for JS -->
+        <div class="ref" id="ref">
+            <div class="color-primary"></div>
+            <div class="chart">
+                <div class="color-primary"></div>
+                <div class="color-secondary"></div>
+            </div>
+        </div>
+
+
+{% endblock content %}
+
+
+{#   <script src="{% static 'js/charts.js' %}"></script>#}
+{#   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>#}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+<div class="row title-block cloudini-div-title">
+    <h3 class=" title cloudini-center-text"> Violations </h3>
+</div>
+
+
+<div class="cloudini-card" >
+    last scan status: {{ last_scan_time }}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }} ">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
+    <div class="cloudini-card card sameheight-item " >
+        <div class="card-block ">
+        <div class="card-title-block" >
+
+       <table class="table table-bordered table-hover">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">Connected Policy</th>
+                <th scope="col">Resource Name</th>
+                <th scope="col">First Appearance</th>
+                <th scope="col">Fixed Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for violation in violationsList %}
+                <tr>
+                <th scope="row">{{ violation.connectedPolicy }}</th>
+                <th>{{ violation.resource_id }}</th>
+                <th>{{ violation.date }}</th>
+                <th>{{ violation.fixedDate }}</th>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div align="center">
+            <form action="scan" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-lg btn-secondary ">Scan For Violations</button>
+            </form>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

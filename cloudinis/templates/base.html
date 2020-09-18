@@ -1,0 +1,199 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> Cloudini </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/vendor.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/app-blue.css' %}">
+
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="app" id="app">
+
+                <header class="header">
+                {% if user.is_authenticated %}
+                    <h1 class="cloudini-font-Niconne"> Welcome,  {{ user.username }}</h1>
+                {% endif %}
+                    <div class="header-block header-block-nav">
+                        <ul class="nav-profile">
+                            <li class="profile dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src = {% static 'pictures/account.png' %} height="50" width="70"> </img>
+                                </a>
+                                <div class="dropdown-menu profile-dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    {% if user.is_authenticated %}
+                                   <div class="text-center">
+                                   <div style = "border-bottom: 1px solid #d7dde4">
+                                       <h6><strong>{{ user.username }}</strong></h6>
+
+                                   </div>
+                                   </div>
+                                    <a class="dropdown-item" href="{% url 'profile' %}">
+                                        <i class="fa fa-user icon"></i> Profile </a>
+                                    <a class="dropdown-item" href="{% url 'change_password' %}">
+                                        <i class="fa fa-user icon"></i> Change Password </a>
+                                    <a class="dropdown-item" href="{% url 'logout' %}">
+                                        <i class="fa fa-power-off icon"></i> Logout </a>
+                                    {% else %}
+                                    <a class="dropdown-item" href="{% url 'login' %}">
+                                        <i class="fa fa-user icon"></i> Login </a>
+
+                                    {% endif %}
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+
+            <article class="content dashboard-page">
+                    <section class="section">
+{#                        <div class="row sameheight-container">#}
+
+                <div>
+                {% block content %}
+                {% endblock %}
+                </div>
+
+{#                        </div>#}
+                    </section>
+            </article>
+
+                <aside class="sidebar">
+                    <div class="sidebar-container">
+                        <div class="sidebar-header">
+                            <div class="brand">
+                                <div>
+                                    <a href="{% url 'home' %}">
+                                    <img src = {% static 'pictures/cloudini.png' %} height="120" width="120" > </img>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="menu">
+                            <ul class="sidebar-menu metismenu" id="sidebar-menu">
+
+                                {% if user.is_authenticated %}
+                                    {% url 'home' as home_url %}
+                                        <li {% if request.get_full_path == home_url %}class="active"{% endif %} >
+                                            <a href="{% url 'home' %}">
+                                                <i class="fa fa-home"></i> Dashboard </a>
+                                        </li>
+                                {% if user.isAdmin == True %}
+
+                                    {% url 'register' as register_url %}
+                                        <li {% if request.get_full_path == register_url %}class="active"{% endif %} >
+                                                <a href="{% url 'register' %}"></i> Register User </a>
+                                        </li>
+                                {% endif %}
+
+                                    {% url 'view_policies' as view_policies_url %}
+                                        <li {% if request.get_full_path == view_policies_url %}class="active"{% endif %} >
+                                                <a href="{% url 'view_policies' %}"></i> View Policies </a>
+                                        </li>
+
+                                    {% url 'policies' as policies_url %}
+                                    {% url 'new_policy' as new_policy_url %}
+                                        <li {% if request.get_full_path == policies_url  or request.get_full_path == new_policy_url%} class="active"{% endif %}>
+                                        <a href="#"> Policies <i class="fa arrow"></i></a>
+                                            <ul
+                                                {% if request.get_full_path == policies_url  or request.get_full_path == new_policy_url%}
+                                                class="sidebar-nav collapse in"
+                                                {% else %}
+                                                class="sidebar-nav"
+                                                {% endif %}>
+
+                                                <li {% if request.get_full_path == policies_url %}class="active"{% endif %} >
+                                                        <a href="{% url 'policies' %}"></i> My Policies </a>
+                                                </li>
+
+                                            {% if user.isAdmin == True %}
+                                                <li {% if request.get_full_path == new_policy_url %}class="active"{% endif %}>
+                                                        <a href="{% url 'new_policy' %}"></i> New Policy </a>
+                                                </li>
+                                            {% endif %}
+                                            </ul>
+                                        </li>
+
+                                    {% url 'violations' as violations_url %}
+                                         <li {% if request.get_full_path == violations_url %}class="active"{% endif %} >
+                                                <a href="{% url 'violations' %}"></i> Violations </a>
+                                        </li>
+
+                                    {% url 'about' as about_url %}
+                                        <li {% if request.get_full_path == about_url %}class="active"{% endif %} >
+                                                <a href="{% url 'about' %}"></i> About Us </a>
+                                        </li>
+
+                                {% else %}
+
+                                     {% url 'login' as login_url %}
+                                        <li {% if request.get_full_path == login_url %}class="active"{% endif %}>
+                                            <a href="{% url 'login' %}"></i> Login </a>
+                                        </li>
+
+                                     {% url 'register_org' as register_org_url %}
+                                        <li {% if request.get_full_path == register_org_url %}class="active"{% endif %}>
+                                            <a href="{% url 'register_org' %}"></i> Register Organization</a>
+                                        </li>
+
+                                     {% url 'about' as about_url %}
+                                        <li {% if request.get_full_path == about_url %}class="active"{% endif %}>
+                                                <a href="{% url 'about' %}"></i> About Us </a>
+                                        </li>
+                                {% endif %}
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <footer class="sidebar-footer">
+
+
+                    </footer>
+                </aside>
+                <footer class="footer">
+
+                    <div>© 2020 Cloudini. All Rights Reserved. </div>
+
+                </footer>
+
+        <script src="{% static 'js/chartscore.js' %}"></script>
+        <script src="{% static 'js/vendor.js' %}"></script>
+        <script src="{% static 'js/app.js' %}"></script>
+        <script type="text/javascript">
+            var data11= {{data1 |safe }};
+            var data22= {{data2 |safe }};
+            var labels22= {{labels2|safe }};
+            var data33= {{data3 |safe }};
+            var labels33= {{labels3|safe }};
+            var data44= {{data4 |safe }};
+            var labels44= {{labels4|safe }};
+        </script>
+
+        <script src="{% static 'js/charts.js' %}"></script>
+
+
+<script>
+     $(function() {
+    // for bootstrap 3 use 'shown.bs.tab', for bootstrap 2 use 'shown' in the next line
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        // save the latest tab; use cookies if you like 'em better:
+        localStorage.setItem('lastTab', $(this).attr('href'));
+    });
+
+    // go to the latest tab, if it exists:
+    var lastTab = localStorage.getItem('lastTab');
+    if (lastTab) {
+        $('[href="' + lastTab + '"]').tab('show');
+    }
+});
+ </script>
+            </div></div>
+    </body>
+</html>

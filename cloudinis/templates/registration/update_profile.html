@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content%}
+
+<div class="row title-block cloudini-div-title">
+    <h3 class=" title cloudini-center-text">  My Profile </h3>
+</div>
+
+<div class="cloudini-card" >
+    <div class=" card sameheight-item " >
+        <div class="card-block ">
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br><div class="text-center"><button type="submit" class="btn btn-lg btn-primary">Save </button></div>
+        </form>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

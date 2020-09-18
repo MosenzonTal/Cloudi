@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<div class="row title-block cloudini-div-title">
+    <h3 class=" title cloudini-center-text">  Delete Policy </h3>
+</div>
+
+<div class="cloudini-card" >
+    <div class=" card sameheight-item " >
+        <div class="card-block cloudini-center-text ">
+
+
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <h4>Are you sure you want to delete the policy {{ activatedpolicy.policy }} for {{ activatedpolicy.affectedResource }}?</h4>
+            </fieldset>
+            <div class="form-group">
+                <div align="center">
+                <button class="btn btn-danger" type="submit">Yes, Delete</button>
+                <a class="btn btn-secondary" href="{% url 'policies' %}">Cancel</a>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

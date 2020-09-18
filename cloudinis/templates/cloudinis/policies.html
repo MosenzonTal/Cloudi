@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content%}
+
+<div class="row title-block cloudini-div-title">
+    <h3 class=" title cloudini-center-text"> My Policies </h3>
+</div>
+
+<div class="cloudini-card" >
+    <div class="cloudini-card card sameheight-item " >
+        <div class="card-block ">
+        <div class="card-title-block" >
+       <table class="table  table-bordered table-hover">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">Policy</th>
+                <th scope="col">Affected Resource</th>
+                <th scope="col">Information</th>
+                <th scope="col">Action Item</th>
+                <th scope="col">Tag To Notify</th>
+                {% if user.isAdmin == True %}
+                <th scope="col"></th>
+                {% endif %}
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for policy in policies %}
+                {% if policy.organization_id == user.organization_id%}
+                    <tr>
+                    <th scope="row">{{ policy.policy }}</th>
+                    <th>{% for affectedResource in policy.affectedResource %}{{ affectedResource }}{% endfor %}</th>
+                    <th>{% for metadata in policy.metadata %}{{ metadata }}{% endfor %}</th>
+                    <th>{% for actionItem in policy.actionItem %}{{ actionItem }}{% endfor %}</th>
+                    <th>{% for resourceTagToNotify in policy.resourceTagToNotify %}{{ resourceTagToNotify }}{% endfor %}</th>
+                    {% if user.isAdmin == True %}
+                    <th><a href="{% url 'delete_policy' policy.id %}">delete</a> &nbsp;
+                    <a href="{% url 'update_policy' policy.id %}">update</a></th>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+         {% if user.isAdmin == True %}
+        <div align="center">
+            <button id="myBtn" class=" btn btn-lg btn-secondary " onclick='location.href="{% url 'new_policy' %}"'>Add New Policy</button>
+        </div>
+        {% endif %}
+    </div>
+</div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

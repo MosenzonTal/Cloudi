@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+<div class="row title-block cloudini-div-title">
+    <h3 class=" title cloudini-center-text"> Policies </h3>
+</div>
+
+
+<div class="cloudini-card" >
+    <div class="cloudini-card card sameheight-item " >
+        <div class="card-block ">
+        <div class="card-title-block" >
+       <table class="table table-bordered table-hover">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Affected Resources</th>
+                <th scope="col">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for policy in policies %}
+                <tr>
+                <th scope="row">{{ policy.name }}</th>
+                <th>{{ policy.affectedResources }}</th>
+                <th>{{ policy.description }}</th>
+            {% endfor %}
+          </tbody>
+        </table>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

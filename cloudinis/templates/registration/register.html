@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+    {% block content%}
+
+    {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }} ">
+            {{ message }}
+          </div>
+        {% endfor %}
+    {% endif %}
+
+    <div class="cloudini-card" >
+        <div class="card-block cloudini-center-text ">
+            <div class="auth-container">
+                <div class="card">
+                    <header class="auth-header">
+                        <h1 class="auth-title">
+                           Register New User
+                        </h1>
+                    </header>
+                    <div class="auth-content">
+                        <form method="POST">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <div align="center"><button class="btn-lg btn-primary" >Register</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
