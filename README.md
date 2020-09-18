@@ -5,10 +5,8 @@ As your cloud capacity grows, you will be faced with a corresponding need to mai
 • Compliance
 
 • Cost reduction & security improvement & organization
-
- ![alt text](https://i.ibb.co/r0SKNc1/Cloudini.png)
  
-### Business goals                                                                                      
+### Business goals                                                                                       ![alt text](https://i.ibb.co/r0SKNc1/Cloudini.png)
 
 • Cloudini will save customer’s resources alignment and compliant.
 
