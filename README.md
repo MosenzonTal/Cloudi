@@ -26,10 +26,10 @@ The customer will be able to create a policy(s) from a given list of policies, e
 
 The customer can decide what action will be taken in case a violation appeared. (Email/SMS/Remove Instance etc..)
 
-![alt text](https://i.ibb.co/r0SKNc1/Cloudini.png)
-
 ### promotional Video: 
 
 https://www.youtube.com/watch?v=Fubfxnv7Ing
+
+![alt text](https://i.ibb.co/r0SKNc1/Cloudini.png)
 
 ### ~҉ ҉~҉   🎀  ~ LET US DO THE MAGIC ~  🎀  ~҉ ҉~҉ 
