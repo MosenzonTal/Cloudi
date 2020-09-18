@@ -1,44 +1,26 @@
-# cloudini
+What is Cloudini?
+As your cloud capacity grows, you will be faced with a corresponding need to maintain and enforce policy across a larger array of resources. As your cloud usage gets larger and your organization's policy requirements increase, the scope of your policy enforcement processes needs to expand to ensure consistent policy adherence and fast violation detection. Larger deployments justify a larger enforcement scope and may need to take advantage of more sophisticated enforcement mechanisms involving deployment standards, company's compliance and the ability to ensure policy alignment.
 
-Prerequisites:
-1. Install python 3 (the current latest is 3.8.2, which is definitely good enough) (https://www.python.org/downloads/)
-2. Install git bash (git command line for windows) (https://git-scm.com/downloads)
-3. Install Pycharm from Jetbrains offical website (use colman tutorial to activate the ultimate version http://db.cs.colman.ac.il/Downloads/jetbrains.pdf)
+Cloudini is about a couple of things, grouped into two main ideas:
+• Compliance
 
+• Cost reduction & security improvement & organization
 
-We are going to work with the standard git flow, which means:
-We are going to have two main branches - Master and Development
-Master branch - no one can touches the master
-Development branch - every feature will be checked out from development, and of course, will be pushed back into development
+Business goals
+• Cloudini will save customer’s resources alignment and compliant.
 
-* More information about git flow can be found here - https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+• Cloudini will simplify customer’s operations.
 
-New features:
-- Clone this repo (using git clone)
-- Checkout to development branch (git checkout development)
-- Create you new Feature Branch (git checkout -b <my_fb_name>)
-- Activate the virtual env (venv\Scripts\activate)
-- Now you will be able to run the server locally (python manage.py runserver, using this command you can also change the access list and the port)
-- Develop your code and test it locally (you can push it to your own feature branch using - git add & git commit & git push)
+• Cloudini will save customer’s money.
 
-When you done with your feature - we will push it together to development:
-- First - we will rebase it from development to align the branch and get all the missed commits (git pull --rebase origin development)
-- Handle the conflicts
-- Hard push (git push -f)
-- Then, open a Pull Request (using the Git UI)
+• Cloudini will save customer’s time and IT humanity resources.
 
-* Look for a git tutorial for better understand this flow (and this approach)
+The customer will be able to create a policy(s) from a given list of policies, each policy is designed and implemented by Cloudini’s team. Each policy holds a violation parameter, means, what needs to be done for this policy to be violated, For example –
 
+• Create an instance in a forbidden region
 
-====================================
+• Create more then 50$ per day EC2 instances
 
-For being able to work with the DB locally:
-Download and install PostgreSQL (9.6.X version) - https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
-set the Password to - Aa123456!
-To update your local DB with the relevant tables - after cloning the repo and checking out to your parituclar branch, run:
-* pip install psycopg2
-* python manage.py makemigrations
-* python manage.py migrate
+• Etc.
 
-Then, log in to your local DB (using pgadmin) and make sure that the cloudinis tables created (you should see 4 tables - customer, policy, activatedpolicy and violation)
-
+The customer can decide what action will be taken in case a violation appeared. (Email/SMS/Remove Instance etc..)
