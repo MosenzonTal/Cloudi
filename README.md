@@ -27,4 +27,4 @@ The customer can decide what action will be taken in case a violation appeared. 
 
 ![alt text](https://i.ibb.co/r0SKNc1/Cloudini.png)
 
-          ### LET US DO THE MAGIC
+   ### LET US DO THE MAGIC
