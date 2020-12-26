@@ -38,5 +38,6 @@ https://www.youtube.com/watch?v=Fubfxnv7Ing
   <img src="https://drasticnews.com/wp-content/uploads/2019/12/Amazon-Web-Services_logo835x396.png" width="350" title="hover text">  
 </p>
 
-
-### ~҉ ҉~҉   🎀  ~ LET US DO THE MAGIC ~  🎀  ~҉ ҉~҉ 
+<p align="center">
+   ### ~҉ ҉~҉   🎀  ~ LET US DO THE MAGIC ~  🎀  ~҉ ҉~҉ 
+</p>
