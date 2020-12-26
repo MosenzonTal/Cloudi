@@ -38,6 +38,10 @@ The customer can decide what action will be taken in case a violation appeared. 
 【﻿－>】 https://www.youtube.com/watch?v=Fubfxnv7Ing
 
 <p align="center">
+  <img src="https://imagizer.imageshack.com/img924/7334/BLDleG.png" width="350" title="hover text">  
+</p>
+
+<p align="center">
   <img src="https://drasticnews.com/wp-content/uploads/2019/12/Amazon-Web-Services_logo835x396.png" width="350" title="hover text">  
 </p>
 
