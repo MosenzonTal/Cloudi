@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://i.ibb.co/r0SKNc1/Cloudini.png" width="330" title="hover text">  
+</p>
+
 # What is Cloudini?
 As your cloud capacity grows, you will be faced with a corresponding need to maintain and enforce policy across a larger array of resources. As your cloud usage gets larger and your organization's policy requirements increase, the scope of your policy enforcement processes needs to expand to ensure consistent policy adherence and fast violation detection. Larger deployments justify a larger enforcement scope and may need to take advantage of more sophisticated enforcement mechanisms involving deployment standards, company's compliance and the ability to ensure policy alignment.
 
@@ -30,6 +34,9 @@ The customer can decide what action will be taken in case a violation appeared. 
 
 https://www.youtube.com/watch?v=Fubfxnv7Ing
 
-![alt text](https://i.ibb.co/r0SKNc1/Cloudini.png)
+<p align="center">
+  <img src="https://drasticnews.com/wp-content/uploads/2019/12/Amazon-Web-Services_logo835x396.png" width="350" title="hover text">  
+</p>
+
 
 ### ~҉ ҉~҉   🎀  ~ LET US DO THE MAGIC ~  🎀  ~҉ ҉~҉ 
