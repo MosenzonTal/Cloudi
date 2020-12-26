@@ -16,6 +16,7 @@ As your cloud capacity grows, you will be faced with a corresponding need to mai
 • Cloudini will simplify customer’s operations. <br/>
 • Cloudini will save customer’s money. <br/>
 • Cloudini will save customer’s time and IT humanity resources. <br/>
+
 The customer will be able to create a policy(s) from a given list of policies, each policy is designed and implemented by Cloudini’s team. Each policy holds a violation parameter, means, what needs to be done for this policy to be violated, For example – <br/>
 
 • Create an instance in a forbidden region <br/>
@@ -28,9 +29,9 @@ The customer can decide what action will be taken in case a violation appeared. 
 
 **cloudini was built on a technology stack of:**
 
-#Python 3, #Html 5, #CSS 3, #Vanilla JavaScript and jQuery, <br/>
+*#Python 3, #Html 5, #CSS 3, #Vanilla JavaScript and jQuery, <br/>
 #Django Web Framework, #Django Rest Framework, <br/>
-#Boto 3 (AWS Python SDK), #AWS RDS (Relational Database Service) - PostgreSQL, #AWS EC2 (Elastic Compute Cloud) – The application servers.
+#Boto 3 (AWS Python SDK), #AWS RDS (Relational Database Service) - PostgreSQL, #AWS EC2 (Elastic Compute Cloud) – The application servers.*
  
 ### Promotional Video: 
 
