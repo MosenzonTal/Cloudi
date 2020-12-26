@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="https://i.ibb.co/r0SKNc1/Cloudini.png" width="330" title="hover text">  
 </p>
 
@@ -32,7 +32,7 @@ The customer can decide what action will be taken in case a violation appeared. 
 
 ### Technology Stack 
 
-** cloudini was built on a technology stack of:
+**cloudini was built on a technology stack of:**
 
 #Python 3, #Html 5, #CSS 3, #Vanilla JavaScript and jQuery, #Django Web Framework, #Django Rest Framework, #Boto 3 (AWS Python SDK), #AWS RDS (Relational Database Service) - PostgreSQL, #AWS EC2 (Elastic Compute Cloud) – The application servers.
  
