@@ -1,4 +1,4 @@
-<p align="left">
+<p align="center">
   <img src="https://i.ibb.co/r0SKNc1/Cloudini.png" width="330" title="hover text">  
 </p>
 
