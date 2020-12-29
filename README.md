@@ -13,9 +13,10 @@ As your cloud capacity grows, you will be faced with a corresponding need to mai
 
 **cloudini was built on a technology stack of:**
 
-*#Python 3, #Html 5, #CSS 3, #Vanilla JavaScript and jQuery, <br/>
-#Django Web Framework, #Django Rest Framework, <br/>
-#Boto 3 (AWS Python SDK), #AWS RDS (Relational Database Service) - PostgreSQL, #AWS EC2 (Elastic Compute Cloud) – The application servers.*
+**#Python 3**, #Html 5, #CSS 3, #Vanilla JavaScript and jQuery, <br/>
+**#Django Web Framework**, #Django Rest Framework, <br/>
+**#Boto 3 (AWS Python SDK)**, #**AWS RDS** (Relational Database Service) - PostgreSQL, 
+**#AWS EC2** (Elastic Compute Cloud) – The application servers.
  
 ### Promotional Video Of the application: (Recommended)
 
