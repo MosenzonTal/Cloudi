@@ -44,6 +44,8 @@ The customer will be able to create a policy(s) from a given list of policies, e
 
 The customer can decide what action will be taken in case a violation appeared. (Email/SMS/Remove Instance etc..)
 
+-------
+
  ### Cloudini OnePager
 
 As part of a final project in an entrepreneurship course, I chose to present CLOUDINI project to the lecturer as if it were a startup.
@@ -51,6 +53,8 @@ That is why we built a OnePager.
 <p align="left">
   <img src="https://imagizer.imageshack.com/img924/4778/jg5zTU.png" width="700" title="hover text">  
 </p> 
+-------
+
 <p align="center">
   <img src="https://drasticnews.com/wp-content/uploads/2019/12/Amazon-Web-Services_logo835x396.png" width="350" title="hover text">  
 </p>
