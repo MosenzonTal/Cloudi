@@ -20,7 +20,7 @@ As your cloud capacity grows, you will be faced with a corresponding need to mai
  
 ### Promotional Video Of the application: (Recommended)
 Watch Cloudini in Action:
-【﻿﻿－>】 https://www.youtube.com/watch?v=Fubfxnv7Ing
+【•－>】 https://www.youtube.com/watch?v=Fubfxnv7Ing
 
 -------
 
