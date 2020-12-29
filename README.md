@@ -9,6 +9,10 @@ As your cloud capacity grows, you will be faced with a corresponding need to mai
   <img src="https://imagizer.imageshack.com/img924/7334/BLDleG.png" width="650" title="hover text">  
 </p>
 
+### Promotional Video: 
+
+【﻿－>】 https://www.youtube.com/watch?v=Fubfxnv7Ing
+
 ### Cloudini is about a couple of things, grouped into two main ideas:
 
 • Compliance <br/>
@@ -37,9 +41,13 @@ The customer can decide what action will be taken in case a violation appeared. 
 #Django Web Framework, #Django Rest Framework, <br/>
 #Boto 3 (AWS Python SDK), #AWS RDS (Relational Database Service) - PostgreSQL, #AWS EC2 (Elastic Compute Cloud) – The application servers.*
  
-### Promotional Video: 
+ ### Cloudini OnePager
 
-【﻿－>】 https://www.youtube.com/watch?v=Fubfxnv7Ing
+As part of a final project in an entrepreneurship course, I chose to present CLOUDINI project to the lecturer as if it were a startup.
+That is why we built a OnePager.
+<p align="center">
+  <img src="https://imagizer.imageshack.com/img924/7351/TqlmQz.png" width="1000" title="hover text">  
+</p> 
 
 <p align="center">
   <img src="https://drasticnews.com/wp-content/uploads/2019/12/Amazon-Web-Services_logo835x396.png" width="350" title="hover text">  
