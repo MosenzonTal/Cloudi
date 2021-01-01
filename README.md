@@ -9,6 +9,10 @@ As your cloud capacity grows, you will be faced with a corresponding need to mai
   <img src="https://imagizer.imageshack.com/img924/7334/BLDleG.png" width="650" title="hover text">  
 </p>
 
+### Promotional Video Of the application: (Recommended)
+Watch Cloudini in Action:
+【•－>】 https://www.youtube.com/watch?v=Fubfxnv7Ing
+
 ### Technology Stack 
 
 **cloudini was built on a technology stack of:**
@@ -16,11 +20,7 @@ As your cloud capacity grows, you will be faced with a corresponding need to mai
 **#Python 3**, #Html 5, #CSS 3, #Vanilla JavaScript and jQuery, <br/>
 **#Django Web Framework**, #Django Rest Framework, <br/>
 **#Boto 3 (AWS Python SDK)**, **#AWS RDS** (Relational Database Service) - PostgreSQL, 
-**#AWS EC2** (Elastic Compute Cloud) – The application servers.
- 
-### Promotional Video Of the application: (Recommended)
-Watch Cloudini in Action:
-【•－>】 https://www.youtube.com/watch?v=Fubfxnv7Ing
+**#AWS EC2** (Elastic Compute Cloud) – The application servers. 
 
 -------
 
