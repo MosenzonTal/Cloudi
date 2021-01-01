@@ -9,9 +9,8 @@ As your cloud capacity grows, you will be faced with a corresponding need to mai
   <img src="https://imagizer.imageshack.com/img924/7334/BLDleG.png" width="650" title="hover text">  
 </p>
 
-<p align="center">
-  Promotional Video Of the application: (Recommended) 
-</p>
+###  Promotional Video Of the application: (Recommended) 
+
 Watch Cloudini in Action:
 【•－>】 https://www.youtube.com/watch?v=Fubfxnv7Ing
 
