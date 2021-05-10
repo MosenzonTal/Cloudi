@@ -48,9 +48,9 @@ The customer can decide what action will be taken in case a violation appeared. 
  ### Cloudini OnePager
 
 As part of a final project in an **entrepreneurship course**, I chose to present CLOUDINI project to the lecturer as if it were a startup.
-That is why we built a OnePager.
+That is why I built a OnePager.
 <p align="left">
-  <img src="https://imagizer.imageshack.com/img924/4778/jg5zTU.png" width="700" title="hover text">  
+  <img src="https://i.ibb.co/64sbmhT/onePager.png" width="700" title="hover text">  
 </p> 
 
 -------
